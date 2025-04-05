@@ -4,45 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <title>Digicam Resurgence</title>
+    <title>Digicam Revival</title>
 </head>
 <body>
     <div class="header-container">
     <header>
-    <h1>Digicam Resurgence</h1>
+    <h1 id="logo">digicam revival</h1>
     <nav class="header-nav">
         <ul>
-            <li>camera 1</li>
-            <li>camera 2</li>
-            <li>camera 3</li>
+            <li><a href="#">Browse</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
     </nav>
     </header>
     <div class="header-content">
-        <div>
-            <p>Digital cameras from the early 2000's, so-called 'digicams' are having a resurgence.People yearn for something which matches the imperfect quality of memories
-                The calling-cards of older tech imbue it with qualities which now invoke nostalgia
-                 One fine example is the...</p>
-        <h2>Canon Ixus 70</h2>
-        <button>Learn more</button>
+        <div class="hero-content">
+            <h2 class="model">Canon Ixus 70</h2>
+            <p>Digital cameras from the early 2000's, so-called 'digicams' are having a resurgence. In the age of smartphone photography, imperfect photos are beginning to feel closer to the quality of memories. Small 'film-like' CCD sensors and on-camera flash seem to imbue photos with a nostalgic quality. One example is the Canon Ixus 70.</p>
+        <button><a href="#">Learn more</a></button>
         </div>
-        <img width="360px" src="./images/Ixus.JPG" alt="Image of the 2007 camera model Canon Ixus 70">
+        <img id="hero-img" width="400px" src="./images/ixus.png" alt="Image of the 2007 camera model Canon Ixus 70">
     </div>
     </div>
     <div class="gallery">
-        <h2>Sample images</h2>
-        <img src="./images/leaf.JPG" alt="" class="images">
-        <img src="./images/beans.JPG" alt="" class="images">
-        <img src="./images/redflower.JPG" alt="" class="images">
-        <img src="./images/airport.JPG" alt="" class="images">
+        <h2 class="gallery-heading">Sample images</h2>
+        <div class="gallery-images">
+            <figure>
+        <img src="./images/redflower.JPG" alt="" class="images" height="380px">
+<figcaption><em>Flowers</em> <br>f/8, 1/60 sec, ISO 200</figcaption>
+    </figure>
+    <figure>
+        <img src="./images/christmas2.JPG" alt="" class="images" height="380px">
+        <figcaption><em>Christmas tree lights</em> <br>f/2.8, 1 sec, ISO 80 </figcaption>
+    </figure>
+    <figure>
+        <img src="./images/clouds.JPG" alt="" class="images" height="380px">
+        <figcaption><em>Clouds</em> <br>f/8, 1/80 sec, ISO 80 </figcaption>
+    </figure>
+    <figure>
+        <img src="./images/roses.JPG" alt="" class="images" height="380px">
+        <figcaption><em>Roses</em> <br>f/2.8, 1/60 sec, ISO 80 </figcaption>
+    </figure>
+        </div>
     </div>
-<!-- Can insert Brian Eno quote about ugliness from lo-fi becoming beautiful -->
-
-
-
+    <div class="pull-quote">
+        <p>&ldquo;<em>Whatever you now find weird, ugly, uncomfortable and nasty about a new medium will surely become its signature. CD distortion, the jitteriness of digital video, the crap sound of 8-bit - all of these will be cherished and emulated as soon as they can be avoided.</em>&rdquo;</p>
+        <span>&ndash; Brian Eno</span>
+    </div>
     <footer></footer>
 </body>
 </html>
