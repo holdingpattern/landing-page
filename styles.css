@@ -1,3 +1,10 @@
+:root {
+    --dark: #252933;
+    --lightest: #f9faf8;
+    --light: #afb4c5;
+    --accent: #cc0853;
+}
+
 body {
     font-family: 'Manrope', Helvetica, Arial, sans-serif;
     margin: 0px;
@@ -10,24 +17,18 @@ h2 {
 }
 
 .header-container {
-    color: #f9faf8;
+    color: var(--lightest);
     padding: 10px 18%;
-    /* background-color: #1f2937; */
-    background-color: #252933;
+    background-color: var(--dark);
     display: flex;
     flex-direction: column;
-    height: 400px;
-    /* align-items: center; */
+    height: 520px;
 }
 
 header {
-    /* flex: 1; */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* padding-top: 10px; */
-    /* align-self: flex-start; */
-    /* width: 75%; */
 }
 
 #logo {
@@ -37,7 +38,6 @@ header {
 letter-spacing: 1.5px;
 color: #fff7bb;
 background-color: #cc0853;
-/* text-shadow: rgb(255, 0, 221) 2px 2px; */
 padding: 1px 5px 1px 6px;
 box-shadow: 3px 3px 6px #1d1f25;
 border-radius: 2px;
@@ -69,7 +69,7 @@ a {
 }
 
 .hero-content {
-    width: 66%;
+    width: 50%;
 }
 
 .hero-content p {
@@ -77,28 +77,22 @@ a {
     font-size: 18px;
 }
 
-/* #hero-img {
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px #00000025;
-} */
-
 button {
    font-size: medium;
     color: white; 
     font-weight: 600;
-    background-color: #3882f6;
+    background-color: var(--accent);
     border: none;
     border-radius: 10px;
     padding: 10px 20px;
 }
 
 .gallery {
-    height: 500px;
+    height: 550px;
     padding: 10px 18%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    /* align-items: center; */
 }
 
 .gallery-heading {
@@ -111,7 +105,6 @@ button {
     flex-wrap: wrap;
     gap: 10px;
     justify-content: space-between;
-    /* height:500px; */
 }
 
 .images {
@@ -132,15 +125,64 @@ figcaption {
 }
 
 .pull-quote {
-    background-color: #afb4c5;
+    background-color: var(--light);
     padding: 10px 18%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: larger;
-    height: 300px;
+    font-size: 25px;
+    height: 350px;
 }
 
 .pull-quote span {
     align-self: flex-end;
+    font-weight: 700;
+color: var(--dark);
 }
+
+.cta-container {
+    height: 350px;
+    display: flex;
+    padding: 10px 18%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cta {
+    height: 60%;
+    box-sizing: border-box;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2d313f;
+    border-radius: 10px;
+    font-size: large;
+    color: var(--lightest);
+    gap: 10px;
+}
+
+.cta-text {
+width: 75%;
+}
+
+.cta-text p, h3 {
+margin: 5px 0px;
+    }
+
+footer {
+    color: var(--light);
+    background-color: var(--dark);
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: underline;
+}
+
+/* Next time I would make more broadly applicable classes, e.g. I could have made a container class
+which I think could have applied to almost every div (hero, gallery, pull quote, cta) and included 
+things such as the shared flex attributes, padding and then for each section applied other specifics
+which applied only to those sections, such as heights, colours, etc. This would have made this
+stylesheet shorter and therefore easier to work with. */
